@@ -18,6 +18,7 @@ export const routes: Routes = [
         children: [
        
           { path: 'dashboard', loadComponent: () => import('./components/secure/dashboard/dashboard.component').then(m => m.DashboardComponent) },
+          { path: 'profile', loadComponent: () => import('./components/secure/profile/profile.component').then(m => m.ProfileComponent) },
         //   { path: 'login', loadComponent: () => import('./features/auth/login/login.component').then(m => m.LoginComponent) },
         ],
       },
